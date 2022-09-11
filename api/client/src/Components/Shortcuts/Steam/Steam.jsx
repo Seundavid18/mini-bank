@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import './Steam.css'
-import netflixImg from '../../../Images/Netflix-Revamps-Logo.jpg'
 import { Context } from '../../../ContextApi/Context'
 import {MdCancel} from 'react-icons/md'
 import {BsCheckCircleFill} from 'react-icons/bs'

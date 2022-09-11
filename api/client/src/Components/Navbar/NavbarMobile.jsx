@@ -4,6 +4,7 @@ import { SiStarlingbank } from 'react-icons/si'
 import { Context } from '../../ContextApi/Context'
 import { IoIosLogOut } from 'react-icons/io'
 import MobileProfile from '../../Components/MobileProfile/MobileProfile'
+import Profile from '../Profile/Profile'
 
 export default function NavbarMobile() {
 
@@ -18,7 +19,7 @@ export default function NavbarMobile() {
             <div className="container">
                 <a className="navbar-brand bank-nameNav"><SiStarlingbank color='#fff' size={28} className="me-2"/>CHASE-BANK</a>
                 
-                    {user && <MobileProfile />}
+                    {user && <Profile />}
                 
                 <div onClick={handleLogout}>              
                     <IoIosLogOut color='#fff' size={26} className="ms-4" >{ user }</IoIosLogOut>

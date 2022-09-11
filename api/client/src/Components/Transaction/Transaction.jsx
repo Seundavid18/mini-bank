@@ -34,7 +34,7 @@ export default function Transaction() {
             }))
         }
         getHistory()
-      }, [setHistory])
+      })
 
   return (
     <div className='col-lg-4 ps-lg-5 pe-lg-5 mobile-container'>

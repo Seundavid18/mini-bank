@@ -10,15 +10,16 @@ export default function Profile() {
     const {user, dispatch, isFetching} = useContext(Context)
     const [file, setFile] = useState(null)
     const [success, setSuccess] = useState(false)
-    const PF = "https://chasebankapp.herokuapp.com//images/"
+    const DP = "https://chasebankapp.herokuapp.com/images/"
 
     const handleFile = (e) => {
         setFile(e.target.files[0])
       }
-    
-    //   const handleFullName = (e) => {
-    //     setFullName(e.target.value)
-    //   }    
+  
+
+    const handleReload = () => {
+      window.location.reload('/')
+    }
 
     const handleSubmit = async (e) => {
         dispatch({type: "UPDATE_START"})
@@ -49,7 +50,7 @@ export default function Profile() {
 
   return (
     <>
-        <img className="nav-item nav-dp" src={file ? URL.createObjectURL(file) : PF + user.profilePicture} alt="" data-bs-toggle="modal" data-bs-target="#addProfileModal"/>
+        <img className="nav-item nav-dp" src={file ? URL.createObjectURL(file) : DP + user.profilePicture} alt="" data-bs-toggle="modal" data-bs-target="#addProfileModal"/>
         <h5 className='fs-6 fw-bold mt-2 ms-4 text-secondary nav-name'>{user.fullName}</h5>
 
          {/* Add Modal */}
@@ -57,18 +58,18 @@ export default function Profile() {
                     <div className="modal-dialog modal-lg modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-header border-0">
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={handleReload}></button>
                         </div>
                         <div className="modal-body">
                         {success && 
                             <div className="profileUpdate mb-4 d-flex mx-auto justify-content-center align-items-center">
-                            <h4 className='text-center d-flex justify-content-center align-items-center fs-6 mt-1' style={{color: 'green'}}>Profile Updated</h4>
+                            <h4 className='text-center d-lg-flex justify-content-center align-items-center fs-6 mt-1' style={{color: 'green'}}>Profile Updated</h4>
                             </div>
                         }
                         <form id="addform" className='' onSubmit={handleSubmit}>
                             <div className="mb-3">
                              <div className='d-flex justify-content-center'>
-                                <img className="nav-item nav-profile" src={file ? URL.createObjectURL(file) : PF + user.profilePicture} alt=""/>
+                                <img className="nav-item nav-profile" src={file ? URL.createObjectURL(file) : DP + user.profilePicture} alt=""/>
                                 <label htmlFor="fileInput">
                                 <FaUserCircle className='settingsDpIcon mt-5'/>
                                 </label>

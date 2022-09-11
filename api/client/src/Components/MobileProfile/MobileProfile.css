@@ -1,4 +1,4 @@
-.nav-dp{
+.nav-mobiledp{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 768px){
-    .nav-dp{
+    .nav-mobiledp{
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -23,13 +23,13 @@
 }
 
 @media (max-width: 768px){
-    .nav-name{
+    .nav-mobilename{
         display: none;
     }
 }
 
 
-.nav-profile{
+.nav-mobileprofile{
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -40,7 +40,7 @@
     background: #fff;
 }
 
-.settingsDpIcon{
+.settingsmobileDpIcon{
     width: 25px;
     height: 23px;
     border-radius: 50%;
@@ -76,7 +76,7 @@
     outline: none;
 }
 
-.updateSubmit{
+.updatemobileSubmit{
     width: 200px;
     padding: 10px;
     border: none;
@@ -85,13 +85,13 @@
     color: #fff;
 }
 
-.updateSubmit:disabled{
+.updatemobileSubmit:disabled{
     cursor: not-allowed;
     background-color: rgb(211, 211, 211);
     color: rgb(134, 134, 134);
 }
 
-.profileUpdate{
+.profilemobileUpdate{
     width: 300px;
     height: 50px;
     padding: 10px;

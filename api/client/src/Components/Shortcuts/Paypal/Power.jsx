@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import './Power.css'
-import powerImg from '../../../Images/paypal_1642256428.png'
 import { Context } from '../../../ContextApi/Context'
 import {MdCancel} from 'react-icons/md'
 import {BsCheckCircleFill} from 'react-icons/bs'

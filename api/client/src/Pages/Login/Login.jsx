@@ -12,7 +12,7 @@ export default function Login() {
     const userRef = useRef()
     const passwordRef = useRef()
     const [errorMsg, setErrorMsg] = useState(false)
-    const { user, dispatch, isFetching } = useContext(Context)
+    const { user, dispatch, error, isFetching } = useContext(Context)
     
   
     const handleSubmit = async (e) => {
@@ -26,6 +26,7 @@ export default function Login() {
         })
         setErrorMsg(true)
         dispatch({type: "LOGIN_SUCCESS", payload: res.data.data});
+        console.log(error)
       } catch(error){
         dispatch({type: "LOGIN_FAILURE", payload: error});
       }

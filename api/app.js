@@ -30,6 +30,21 @@ app.post('/api/upload', upload.single("file"), (req, res) => {
     res.status(200).json('File has been uploaded')
 })
 
+const mobileStorage = multer.diskStorage({
+    destination:(req, mobilefile, cb) => {
+        cb(null, "images")
+    }, 
+    filename:(req, mobilefile, cb) => {
+        cb(null, req.body.name)
+    },
+})
+
+const mobileUpload = multer({storage: mobileStorage})
+app.post('/api/mobile/upload', mobileUpload.single("mobilefile"), (req, res) => {
+    res.status(200).json('File has been uploaded')
+})
+
+
 const router = require("./src/router/userrouter")
 
 app.use(cors())
