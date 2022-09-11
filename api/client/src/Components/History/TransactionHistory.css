@@ -1,0 +1,38 @@
+.history{
+    margin-top: 7px;
+    padding: 3px 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.icon{
+    width:30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.history-name{
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1px;
+}
+
+.time-date{
+    font-size: 10px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1px;
+    color: rgb(126, 126, 126);
+}
+
+.amounts{
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}

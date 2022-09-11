@@ -1,0 +1,68 @@
+.nav-card{
+    height: auto;
+    border-right: 1px solid #eeeeee;
+}
+
+@media (max-width: 768px){
+    .nav-card{
+        display: none;
+    }
+}
+
+.bank-name{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-dp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+    cursor: pointer;
+    margin-left: 35px;
+    background: #fff;
+}
+
+.nav-name{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+.nav-items{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin: 25px 10px;
+    background: #fff;
+}
+
+.nav-items > ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-items > ul > li{
+    color: #5a5a5a;
+    margin-bottom: 28px;
+    cursor: pointer;
+    background: #fff;
+}
+
+
+.nav-not{
+    padding: 3px 4px;
+    background-color: #e65e75;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.nav-not2{
+    padding: 3px 6px;
+    background-color: #e65e75;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}

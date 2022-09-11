@@ -1,0 +1,20 @@
+.nav-mobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .nav-mobile{
+        display: block;
+    }
+}
+
+.nav-bar{
+    background: linear-gradient(45deg, #20abe2, #2c5da9);
+}
+
+.bank-nameNav{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}

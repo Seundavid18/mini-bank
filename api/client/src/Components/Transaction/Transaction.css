@@ -1,0 +1,64 @@
+.trans-flex{
+    flex: 4;
+}
+
+@media(max-width: 768px){
+    .mobile-container{
+        position: relative;
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+.history{
+    margin-top: 7px;
+    padding: 3px 5px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    line-height: 10px;
+}
+
+.amount{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    line-height: 25%;
+  }
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trans-view{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    display: inline-block;
+    justify-content: flex-end;
+    line-height: 10%;
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+}
+
+.trans-view:hover{
+    color: #2c5da9;
+}
+
+.trans-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    line-height: 10%;
+}
+
+.trans-card{
+    width: 100%;
+    height: auto;
+    padding: 27px 10px;
+    border-radius: 20px;
+}

@@ -1,0 +1,132 @@
+.card-flex{
+  flex: 6;
+}
+
+@media(max-width: 768px){
+    .mobile-container{
+        position: relative;
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+.card-box{
+    max-width: 350px;
+    height: 200px;
+    background-image: url(../../Images/abstract-blue-fluid-wave-background-free-vector.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.card-greeting{
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+.card-heading{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.master-card{
+    color: linear-gradient(90deg, #eb001b, #f79e1b);
+}
+
+.holders{
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: 'Lora', serif;
+    color: rgb(219, 219, 219);
+    line-height: 0%;
+}
+
+.holders-name{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #fff;
+    line-height: 0%;
+}
+
+.activeCircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(27, 223, 27);
+    margin-top: 2px;
+}
+
+.activeText{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Lora', serif;
+    color: rgb(219, 219, 219);
+}
+
+.mastercard-icon {
+    display: inline-block;
+    height: 1em;
+    isolation: isolate;
+    position: relative;
+    line-height: 1em;
+    vertical-align: middle;
+    width: 1.611em;
+  }
+  
+  .mastercard-icon::before,
+  .mastercard-icon::after {
+    border-radius: 2em;
+    content: "";
+    display: inline-block;
+    height: 3em;
+    position: absolute;
+    width: 3em;
+  }
+  
+  .mastercard-icon::before {
+    background-color: #eb001b;
+    left: 0;
+    top: 0;
+  }
+  
+  .mastercard-icon::after {
+    background-color: #f79e1b;
+    mix-blend-mode: hard-light;
+    right: 0;
+    top: 0;
+  }
+
+
+  
+  .activity-box{
+    width: auto;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .activity-box:focus{
+    outline: none;
+  }
+
+  .img-box{
+    max-width: 100%;
+    height: 300px;
+    background-size: cover;
+    object-fit: cover;
+  }

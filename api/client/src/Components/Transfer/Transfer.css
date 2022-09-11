@@ -1,0 +1,93 @@
+.bal-box{
+    width: 100%;
+    height: 200px;
+    margin-top: 16px;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    padding: 30px 20px;
+  }
+
+  .bal{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    line-height: 25%;
+  }
+  .amount{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    line-height: 25%;
+  }
+
+  .withdraw{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2c5da9;
+    color: #fff;
+  }
+
+  .modal-title{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    
+}
+
+.modal-label{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    line-height: 25%;
+  }
+
+  .modal-bank{
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+  }
+
+.text{
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+
+.tranferSubmit{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2c5da9;
+    color: #fff;
+}
+
+.tranferSubmit:disabled{
+  cursor: not-allowed;
+  background-color: rgb(211, 211, 211);
+  color: rgb(134, 134, 134);
+}
+
+.successMsg{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+}
+
+.errorMsg{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+}

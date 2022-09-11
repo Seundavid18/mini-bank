@@ -1,0 +1,47 @@
+@media(max-width: 768px){
+    .mobile-container{
+        position: relative;
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+.shortcut{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    margin-top: 50px;
+}
+
+.shortcard{
+    max-width: 120px;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+  }
+
+  .short{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    line-height: 25%;
+  }
+
+  .shortImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    object-fit: cover;
+    background-color: #fff;
+  }
+
+  .shortImg2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+  }
