@@ -71,20 +71,21 @@ const login = async(req,res)=>{
        
 
         // send email alert for log in
-        try{
-            await sendMail({
-                email:user.email,
-                subject:"login alert",
-                message:`you successfully logged into your account at ${Date()}`
-            })
-        }catch(error){
-            console.log(error)
-            return res.status(500).json({
-                success:false,
-                msg:error.message
-            })
+        // try{
+        //     await sendMail({
+        //         email:user.email,
+        //         subject:"login alert",
+        //         message:`you successfully logged into your account at ${Date()}`
+        //     })
+        // }catch(error){
+        //     console.log(error)
+        //     return res.status(500).json({
+        //         success:false,
+        //         msg:error.message
+        //     })
             
-        }
+        // }
+
         res.status(200).json({
             success:true,
             msg:"successfully logged in",
