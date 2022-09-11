@@ -42,7 +42,7 @@ const [fullName, setFullName] = useState("")
         pin: `${pin}`
     }
     setLoading(true)
-    axiosInstance.post('createaccount', signin)
+    axiosInstance.post('/createaccount', signin)
     .then(response => {
       if (response.data.success === true) {
         response.data && window.location.replace("/login") 

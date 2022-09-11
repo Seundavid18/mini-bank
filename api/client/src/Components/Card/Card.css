@@ -26,6 +26,16 @@
     font-style: italic;
 }
 
+@media(max-width: 768px){
+  .card-greeting{
+    margin-top: 40px;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-style: italic;
+  }
+}
+
 .card-heading{
     font-size: 18px;
     font-weight: bold;

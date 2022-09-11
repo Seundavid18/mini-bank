@@ -56,7 +56,7 @@ export default function Amazon() {
 
     try{
       setLoading(true)
-      const res = await axiosInstance.post('transfer/' + user._id, transfer)
+      const res = await axiosInstance.post('/transfer/' + user._id, transfer)
       if(res.data.success === true){
         setSuccessMsg(res.data.msg)
       }else{

@@ -18,7 +18,7 @@ export default function Transaction() {
 
     useEffect(() =>{
       const fetchBalance = async () => {
-        const res = await axiosInstance.get('getaccount/'+ user._id)
+        const res = await axiosInstance.get('/getaccount/'+ user._id)
         setBalance(res.data.data.balance)
       }
       fetchBalance()
@@ -27,7 +27,7 @@ export default function Transaction() {
     
     useEffect(()=>{
         const getHistory = async () => {
-          const res = await axiosInstance.get('transactionhistory/' + user._id)
+          const res = await axiosInstance.get('/transactionhistory/' + user._id)
           setHistory(
             res.data.data.transactionHistory.sort((a, b) => {
                 return new Date(b.timeStamps) - new Date(a.timeStamps)

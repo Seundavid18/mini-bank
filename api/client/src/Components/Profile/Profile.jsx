@@ -38,7 +38,7 @@ export default function Profile() {
           } catch(error) {}
         }
         try{
-          const res = await axiosInstance.put('update/' + user._id, updatedUser)
+          const res = await axiosInstance.put('/update/' + user._id, updatedUser)
           setSuccess(true)
           dispatch({type: "UPDATE_SUCCESS", payload: res.data})
         } catch(error) {

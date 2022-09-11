@@ -8,7 +8,7 @@ import { ContextProvider } from './ContextApi/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+<BrowserRouter>
   <React.StrictMode>
     <ContextProvider>
       <App />

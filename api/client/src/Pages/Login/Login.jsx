@@ -20,7 +20,7 @@ export default function Login() {
   
       dispatch({type: "LOGIN_START"});
       try{
-        const res = await axiosInstance.post('login', {
+        const res = await axiosInstance.post('/login', {
           email: userRef.current.value,
           password: passwordRef.current.value
         })

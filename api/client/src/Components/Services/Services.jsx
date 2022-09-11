@@ -44,7 +44,7 @@ export default function Services() {
 
     try{
       setLoading(true)
-      const res = await axiosInstance.post('deposit', deposit)
+      const res = await axiosInstance.post('/deposit', deposit)
       if(res.data.success === true){
         setSuccessMsg(res.data.msg)
       }else{

@@ -13,7 +13,7 @@ export default function LineChart() {
     
     useEffect(()=>{
         const getHistory = async () => {
-          const res = await axiosInstance.get('transactionhistory/' + user._id)
+          const res = await axiosInstance.get('/transactionhistory/' + user._id)
           setHistory(
             res.data.data.transactionHistory.sort((a, b) => {
                 return new Date(b.timeStamps) - new Date(a.timeStamps)
