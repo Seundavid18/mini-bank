@@ -62,7 +62,7 @@ export default function Transaction() {
                     return (
                         <div key={index} className="history">
                             <div  className='d-flex'>
-                                <div className='col-1 ps-2'>
+                                <div className='col-2'>
                                     {transaction.transferFrom || transaction.depositorName ? (
                                         <div className='icon'>
                                             <BsArrowDownRight size={17} color="#20e662"/>
@@ -90,7 +90,7 @@ export default function Transaction() {
                                 }
                                     
                                 </div>
-                                <div className='col-5 mt-2'>
+                                <div className='col-4 mt-2'>
                                 {transaction.transferFrom || transaction.depositorName ? (
                                     <p className='amounts float-end'style={{color: '#20e662'}}>+ ${transaction.amount}</p>
                                     ) : (
