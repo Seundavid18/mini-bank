@@ -54,18 +54,18 @@ const createaccount = async(req, res)=>{
 // route =>POST/api/login
 const login = async(req,res)=>{
     try{
-        const password = req.body.password
+        // const password = req.body.password
        
         // const accountNumber = req.body.accountNumber
-        const {email} = req.body.body
+        const {email, password} = req.body
        
         const user = await User.findOne({email: email})
        
-        if(!user) return res.status(201).json({success:false,msg:"Email Address does not exist"})
+        if(!user) return res.status(200).json({success:false,msg:"Email address does not exist"})
        
-        const validaccount = await bcrypt.compare(password,user.password)
+        const validaccount = await bcrypt.compare(password, user.password)
        
-        if(!validaccount) return res.status(400).json({success:false,msg:"invalid credentials"})
+        if(!validaccount) return res.status(200).json({success:false, msg:"Invalid login details"})
        
         const token = jwt.sign({accountNumber:user.accountNumber,email:user.email,_id:user._id,fullName:user.fullName},process.env.SECRET,{expiresIn:"1d"})
        

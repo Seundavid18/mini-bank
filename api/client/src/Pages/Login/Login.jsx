@@ -11,7 +11,7 @@ export default function Login() {
 
     const userRef = useRef()
     const passwordRef = useRef()
-    const [errorMsg, setErrorMsg] = useState(false)
+    const [errorMsg, setErrorMsg] = useState("")
     const { dispatch, isFetching } = useContext(Context)
     
   
@@ -24,7 +24,7 @@ export default function Login() {
           email: userRef.current.value,
           password: passwordRef.current.value
         })
-        setErrorMsg(true)
+        setErrorMsg(res.data.msg)
         dispatch({type: "LOGIN_SUCCESS", payload: res.data.data})
       } catch(err){
         dispatch({type: "LOGIN_FAILURE"});
@@ -41,7 +41,7 @@ export default function Login() {
                     {errorMsg && 
                         <div className="d-flex mx-auto justify-content-center align-items-center">
                             <div className='errBox mb-4'>
-                            <h4 className="text-center text-danger d-flex justify-content-center align-items-center fs-6 mt-1"><MdError className="me-3" size={16} color="#ff0000"/>Incorrect username or password</h4>
+                            <h4 className="text-center text-danger d-flex justify-content-center align-items-center fs-6 mt-1"><MdError className="me-3" size={16} color="#ff0000"/>{errorMsg}</h4>
                             </div>
                         </div> 
                     }
