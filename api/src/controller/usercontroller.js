@@ -57,11 +57,11 @@ const login = async(req,res)=>{
         const password = req.body.password
        
         // const accountNumber = req.body.accountNumber
-        const email = req.body.email
+        const {email} = req.body.body
        
-        const user = await User.findOne({email})
+        const user = await User.findOne({email: email})
        
-        if(!user) return res.status(404).json({success:false,msg:"Email Address does not exist"})
+        if(!user) return res.status(201).json({success:false,msg:"Email Address does not exist"})
        
         const validaccount = await bcrypt.compare(password,user.password)
        

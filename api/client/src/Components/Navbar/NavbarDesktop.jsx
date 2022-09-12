@@ -5,7 +5,6 @@ import { RiDashboardFill } from 'react-icons/ri'
 import { BsWallet2 } from 'react-icons/bs'
 import { BiMessageMinus } from 'react-icons/bi'
 import { IoIosLogOut } from 'react-icons/io'
-import Profile from '../Profile/Profile'
 import { Context } from '../../ContextApi/Context'
 
 
@@ -23,7 +22,7 @@ export default function NavbarDesktop() {
       <h4 className='bank-name mt-4'><SiStarlingbank color='#2c5da9' size={28} className="ms-3 mt-1 me-3"/>CHASE-BANK</h4>
       <div>
         <hr />
-        {user && <Profile />}
+
       </div>
       <div className='nav-items'>
         <ul>

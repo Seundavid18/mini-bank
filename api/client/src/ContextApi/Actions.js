@@ -7,9 +7,8 @@ export const LoginStart = (userCredentials) => ({
     payload: user,
   });
   
-  export const LoginFailure = (error) => ({
+  export const LoginFailure = () => ({
     type: "LOGIN_FAILURE",
-    payload: error
   });
   
   export const Logout = () => ({

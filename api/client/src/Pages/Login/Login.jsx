@@ -12,7 +12,7 @@ export default function Login() {
     const userRef = useRef()
     const passwordRef = useRef()
     const [errorMsg, setErrorMsg] = useState(false)
-    const { user, dispatch, error, isFetching } = useContext(Context)
+    const { dispatch, isFetching } = useContext(Context)
     
   
     const handleSubmit = async (e) => {
@@ -25,14 +25,11 @@ export default function Login() {
           password: passwordRef.current.value
         })
         setErrorMsg(true)
-        dispatch({type: "LOGIN_SUCCESS", payload: res.data.data});
-        console.log(error)
-      } catch(error){
-        dispatch({type: "LOGIN_FAILURE", payload: error});
+        dispatch({type: "LOGIN_SUCCESS", payload: res.data.data})
+      } catch(err){
+        dispatch({type: "LOGIN_FAILURE"});
       }
     };
-  
-    console.log(user)
   return (
     <div className="flex">
         <div className='flex-1'>

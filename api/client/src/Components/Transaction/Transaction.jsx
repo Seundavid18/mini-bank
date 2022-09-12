@@ -61,7 +61,7 @@ export default function Transaction() {
                 {history.map((transaction, index) => {
                     return (
                         <div key={index} className="history">
-                            <div  className='row row-cols'>
+                            <div  className='d-flex'>
                                 <div className='col-1 ps-2'>
                                     {transaction.transferFrom || transaction.depositorName ? (
                                         <div className='icon'>
