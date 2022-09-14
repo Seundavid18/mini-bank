@@ -132,9 +132,9 @@ const cashDeposit = async(req,res)=>{
     try{
         const {accountNumber, amount, fullName} = req.body
         
-        const findaccount = await User.findOne({accountNumber})
+        const findaccount = await User.findOne({accountNumber, fullName})
        
-        if(!findaccount) return res.status(200).json({success:false,msg:`Account number ${accountNumber} does not exist`})
+        if(!findaccount) return res.status(200).json({success:false,msg:`Account number ${accountNumber} or account name ${fullName} does not exist`})
         
         findaccount.balance = Number(amount) + findaccount.balance
 
@@ -189,9 +189,9 @@ const transfer = async(req,res)=>{
    
     if(!validuser) return res.status(200).json({success:false,msg:"invalid pin"})
    
-    const findaccountCredit = await User.findOne({accountNumber})
+    const findaccountCredit = await User.findOne({accountNumber, fullName})
    
-    if(!findaccountCredit) return res.status(404).json({success:false,msg:`Account number ${accountNumber} does not exist`})
+    if(!findaccountCredit) return res.status(200).json({success:false,msg:`Account number ${accountNumber} or account name ${fullName} does not exist`})
    
     if(findaccountDebit.balance<amount) return res.status(200).json({success:false,msg:"insufficient balance"})
     

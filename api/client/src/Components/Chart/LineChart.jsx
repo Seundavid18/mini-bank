@@ -27,7 +27,7 @@ export default function LineChart() {
 
 
   var data = {
-    labels: history.slice(0,10).map(t => moment(t.timeStamps).format('dddd').slice(0,3)),
+    labels: history.slice(0,12).map(t => moment(t.timeStamps).format('MMM').slice(0,3)),
     datasets: [
       {
         label: 'Cash Deposit',
@@ -35,25 +35,28 @@ export default function LineChart() {
         backgroundColor: ['#20e662'],
         borderColor: '#20e662',
         borderWidth: 2,
-        tension: 0.4
+        tension: 0.4,
+        spanGaps: true
       },
 
     {
       label: 'Credit',
-      data: history.slice(0,10).map(t => t.transferFrom && t.amount),
+      data: history.slice(0,12).map(t => t.transferFrom && t.amount),
       backgroundColor: ['#20e662'],
       borderColor: '#20e662',
       borderWidth: 2,
-      tension: 0.4
+      tension: 0.4,
+      spanGaps: true
     },
 
     {
       label: 'Debit',
-      data: history.slice(0,10).map(t => t.transferTo && t.amount),
+      data: history.slice(0,12).map(t => t.transferTo && t.amount),
       backgroundColor: ['#f54343'],
       borderColor: '#f54343',
       borderWidth: 2,
-      tension: 0.4
+      tension: 0.4,
+      spanGaps: true
     }
   ]
 }

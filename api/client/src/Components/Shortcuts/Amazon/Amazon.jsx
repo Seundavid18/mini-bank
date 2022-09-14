@@ -85,23 +85,23 @@ export default function Amazon() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={handleReload}></button>
             </div>
             <div className="modal-body">
-            {successMsg && 
+            {successMsg ? (
+              successMsg && 
               <div>
                 <div className="d-flex mx-auto justify-content-center align-items-center">
                   <BsCheckCircleFill size={60} color="#65e965"/>
                 </div>
                 <h4 className='text-center d-flex justify-content-center align-items-center successMsg mt-2'>{successMsg}</h4>
               </div>
-            }
-            
-              {errorMsg && 
+            ) : (
+              errorMsg && 
               <div>
                 <div className="d-flex mx-auto justify-content-center align-items-center">
                   <MdCancel size={60} color="#eb5151"/>
                 </div>
                 <h4 className='text-center d-flex justify-content-center align-items-center errorMsg mt-2'>{errorMsg}</h4>
               </div>
-              }
+            )}
               <form id="addform" onSubmit={handleSubmit}>
                   <div className="mb-3">
                       <label className='modal-label'>Account Number</label>
