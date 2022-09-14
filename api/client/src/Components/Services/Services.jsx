@@ -192,7 +192,7 @@ export default function Services() {
                             </div>
                             <div className="mb-3">
                                 <label className='modal-label-deposit'>Beneficiary Name</label>
-                                <input type="text" name="acc" id="addtask" className="form-control" style={{textTransform: 'capitalize'}} required onChange={handlefullName}/>
+                                <input type="text" name="acc" id="addtask" className="form-control" required onChange={handlefullName}/>
                             </div>
                             <div className="mb-3">
                                 <label className='modal-label-deposit'>Amount</label>

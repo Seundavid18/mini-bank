@@ -27,7 +27,7 @@ export default function LineChart() {
 
 
   var data = {
-    labels: history.slice(0,12).map(t => moment(t.timeStamps).format('MMM').slice(0,3)),
+    labels: history.slice(0,12).map(t => moment(t.timeStamps).format('dddd').slice(0,3)),
     datasets: [
       {
         label: 'Cash Deposit',
