@@ -138,7 +138,7 @@ export default function Apple() {
                     }
                   <div className="mb-3">
                       <label className='modal-label'>Pin</label>
-                      <input type="number" name="acc" id="addtask" className="form-control" required onChange={handlePin} />
+                      <input type="password" name="acc" id="addtask" className="form-control" required onChange={handlePin} />
                   </div>
                   <div className='d-flex justify-content-center'>
                     <button className='tranferSubmit mt-3' type='submit' disabled={loading}>

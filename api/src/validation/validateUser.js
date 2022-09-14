@@ -18,8 +18,9 @@ const Joi = require('joi');
       .regex(/^[a-zA-Z0-9]{6,}$/),
       pin: Joi.string()
       .min(4)
+      .max(4)
       .required()
-      .regex(/^[0-9]{4,}$/)
+      .regex(/^[0-9]$/)
     })
     return schema.validate(user);
 }

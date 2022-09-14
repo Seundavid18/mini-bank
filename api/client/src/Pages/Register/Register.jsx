@@ -77,6 +77,7 @@ const [fullName, setFullName] = useState("")
                                             <label className="mb-2 form-font fs-6">Full Name</label>
                                             <input 
                                             className="formInput mb-3" 
+                                            style={{textTransform: 'capitalize'}}
                                             type="text"   
                                             placeholder="Enter your full name" 
                                             required
@@ -100,7 +101,7 @@ const [fullName, setFullName] = useState("")
                                             <input 
                                             className="formInput mb-4" 
                                             type="password"   
-                                            placeholder="Enter your password" 
+                                            placeholder="Enter your password (6+ characters)" 
                                             required
                                             onChange={handlePassword}
                                             />
@@ -110,7 +111,7 @@ const [fullName, setFullName] = useState("")
                                             <input 
                                             className="formInput mb-4" 
                                             type="password"   
-                                            placeholder="Enter your Pin" 
+                                            placeholder="Enter your Pin (4 number characters)" 
                                             required
                                             onChange={handlePin}
                                             />

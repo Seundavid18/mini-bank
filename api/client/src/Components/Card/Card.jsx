@@ -53,7 +53,7 @@ export default function Card() {
         <div className='mt-5'>
           <span className='float-end'>
             <div className='activity-box'>
-              <p>Past 10 Transactions</p>
+              <p>Past 12 Transactions</p>
             </div>
           </span>
           <h6 className='card-heading'>Money Flow</h6>
