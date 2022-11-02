@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react'
 import './Services.css'
 import { RiLuggageDepositFill } from 'react-icons/ri'
-import { FaMoneyBillWave } from 'react-icons/fa'
 import {BsArrowDownRight} from 'react-icons/bs'
 import { VscHistory } from 'react-icons/vsc'
 import {BsArrowUpRight} from 'react-icons/bs'

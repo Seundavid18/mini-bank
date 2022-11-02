@@ -76,8 +76,7 @@ const [fullName, setFullName] = useState("")
                                             <div className="loginForm">
                                             <label className="mb-2 form-font fs-6">Full Name</label>
                                             <input 
-                                            className="formInput mb-3" 
-                                            style={{textTransform: 'capitalize'}}
+                                            className="formInput mb-3"
                                             type="text"   
                                             placeholder="Enter your full name" 
                                             required
